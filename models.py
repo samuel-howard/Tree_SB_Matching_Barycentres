@@ -12,8 +12,7 @@ def get_timestep_embedding(timestep, embedding_dim: int):
     Compute sinusoidal embeddings for a single timestep.
     """
     half_dim = embedding_dim // 2
-    # k = 2 #10000    this might be stupid
-    k = 10000 # not sure what value here?
+    k = 10000
     emb = jnp.log(k) / (half_dim - 1)
     emb = jnp.exp(jnp.arange(half_dim) * -emb)
     emb = timestep * emb

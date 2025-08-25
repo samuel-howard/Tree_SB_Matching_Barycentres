@@ -7,7 +7,7 @@ This repository contains code for the preprint https://www.arxiv.org/abs/2506.17
   <img src="./figures/treeIMF_markovianised.png" width="45%" />
 </p>
 
-The TreeDSBM algorithm extends fixed-point approaches for barycentre approximation to use flow-base entropic OT solvers, namely the IMF procedure [1]. It proceeds by iteratively constructing stochastic bridges according to the tree-structured framework of [3],[4], and Markovianising the processes along each edge by performing bridge-matching. It provides an IMF counterpart to the IPF approach of [3].
+The TreeDSBM algorithm extends fixed-point approaches for barycentre approximation [1] to use flow-based entropic OT solvers, namely the IMF procedure [2]. It proceeds by iteratively constructing stochastic bridges according to the tree-structured framework of [3],[4], and Markovianising the processes along each edge by performing bridge-matching. It provides an IMF counterpart to the IPF approach of [3].
 
 Note: This codebase has been refactored since the original arxiv upload, so results might vary slightly from those reported. The arxiv version will be updated soon.
 
